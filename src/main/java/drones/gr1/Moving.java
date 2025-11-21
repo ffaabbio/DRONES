@@ -1,3 +1,16 @@
 package drones.gr1;
 
-public class Moving extends MoveResult{}
+import java.util.Date;
+
+public class Moving extends MoveResult{
+    private Position destination;
+    private Date arriveAt;
+
+    public Position getDestination() {
+        return destination;
+    }
+
+    public Date getArriveAt(){
+        return arriveAt;
+    }
+}
