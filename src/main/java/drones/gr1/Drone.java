@@ -8,7 +8,9 @@ public class Drone {
     MoveResult reject =  new Rejected();
     MoveResult moving = new Moving();
 
-    public Drone(Position position){
+    public Drone(String nom,Vitesse vitesse,Position position){
+        this.nom = nom;
+        this.vitesse = vitesse;
         this.position = position;
     }
 
