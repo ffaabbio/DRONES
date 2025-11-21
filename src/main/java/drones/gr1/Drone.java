@@ -1,5 +1,7 @@
 package drones.gr1;
 
+import java.util.Objects;
+
 public class Drone {
     String nom;
     Vitesse vitesse;
@@ -18,6 +20,10 @@ public class Drone {
         var result = position.altitudeNotMax(position);
         if(!result) return reject;
         return moving;
+    }
+
+    public String getNom() {
+        return nom;
     }
 
     public Position getPosition(){
