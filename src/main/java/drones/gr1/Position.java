@@ -3,6 +3,8 @@ package drones.gr1;
 public class Position {
     private final double x,y,z;
 
+    private final double ALTITUDE_MAX = 30.0;
+
     public Position(double x, double y, double z){
         this.x = x;
         this.y = y;
@@ -14,8 +16,8 @@ public class Position {
         return result;
     }
 
-    public boolean positionNotMax(Position position){
-        return position.getX() < this.x && position.getY() < this.y && position.getZ() < this.z ;
+    public boolean altitudeNotMax(Position position){
+        return position.getZ() < ALTITUDE_MAX ;
     }
 
     public double getX() {
