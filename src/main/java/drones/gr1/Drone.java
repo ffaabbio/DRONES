@@ -1,6 +1,8 @@
 package drones.gr1;
 
-import java.util.Objects;
+import drones.gr1.MoveResult.MoveResult;
+import drones.gr1.MoveResult.Moving;
+import drones.gr1.MoveResult.Rejected;
 
 public class Drone {
     String nom;

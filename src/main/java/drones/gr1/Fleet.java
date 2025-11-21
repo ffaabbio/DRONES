@@ -1,26 +1,28 @@
 package drones.gr1;
 
+import drones.gr1.AddResponse.AddResponse;
+import drones.gr1.AddResponse.Added;
+
+
 public class Fleet {
+    private AllDrones allDrones;
+    private AllMissions allMissions;
 
-    allDrones et allMissions
+    public AddResponse AddDrone(Drone drone)
+    {
+        this.allDrones.add(drone);
+        return new Added();
+    }
 
-    // On peut supprimer si il n'est pas en MISSION
     public Boolean RemoveDrone()
     {
-
+        return false;
     }
-
-
-    public Boolean AddDrone()
-    {
-
-    }
-
 
     //On peut ajouter une nouvelle mission à condition qu'un drone soit disponible (i.e. qu'il ne soit pas sur une autre mission et qu'il puisse atteindre toutes les positions en vérifiant les altitudes)
     public Boolean AddMission()
     {
-
+        return false;
     }
 
     public void reportMission()

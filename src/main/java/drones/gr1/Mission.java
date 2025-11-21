@@ -1,5 +1,10 @@
 package drones.gr1;
 
+import drones.gr1.Response.Response;
+import drones.gr1.ValidationPlan.KO;
+import drones.gr1.ValidationPlan.OK;
+import drones.gr1.ValidationPlan.ValidationPlan;
+
 public class Mission {
     private String name;
     private Path path;
@@ -10,13 +15,13 @@ public class Mission {
         this.path = path;
     }
 
-    public Boolean next(Drone drone){
+    public ValidationPlan next(Drone drone){
         try{
             drone.goTo(this.path.nextPosition(drone.getPosition()));
-            return true;
+            return new OK();
         }catch(Exception e){
             System.out.println(e.getMessage());
-            return false;
+            return new KO();
         }
     }
 }
