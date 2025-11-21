@@ -14,7 +14,7 @@ public class Position {
         return result;
     }
 
-    public boolean PositionNotMax(Position position){
+    public boolean positionNotMax(Position position){
         return position.getX() < this.x && position.getY() < this.y && position.getZ() < this.z ;
     }
 
