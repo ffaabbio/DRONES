@@ -8,6 +8,10 @@ public class Drone {
     MoveResult reject =  new Rejected();
     MoveResult moving = new Moving();
 
+    public Drone(Position position){
+        this.position = position;
+    }
+
     public MoveResult goTo(Position position){
         var result = position.altitudeNotMax(position);
         if(!result) return reject;
