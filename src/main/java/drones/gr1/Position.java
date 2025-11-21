@@ -12,7 +12,7 @@ public class Position {
     }
 
     public double distanceTo(double xb, double yb, double zb){
-        double distance = Math.sqrt(
+        double result = Math.sqrt(
                 Math.pow(this.x - xb, 2) +
                         Math.pow(this.y - yb, 2) +
                         Math.pow(this.z - zb, 2)
