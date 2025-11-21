@@ -4,10 +4,13 @@ public class Drone {
     String nom;
     Vitesse vitesse;
     Position position;
+    Position altittudeMax = new Position(30,30,30);
     MoveResult reject =  new Rejected();
     MoveResult moving = new Moving();
 
     public MoveResult goTo(Position position){
+        var result = position.altitudeNotMax(position);
+        if(!result) return reject;
         return moving;
     }
 
