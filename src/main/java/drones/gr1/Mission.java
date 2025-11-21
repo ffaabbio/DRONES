@@ -11,6 +11,12 @@ public class Mission {
     }
 
     public Boolean next(Drone drone){
-        if(this.path.nexPosition(drone.position)){}
+        try{
+            drone.goTo(this.path.nextPosition(drone.getPosition()));
+            return true;
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
     }
 }

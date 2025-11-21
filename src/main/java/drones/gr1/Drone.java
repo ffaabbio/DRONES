@@ -10,4 +10,8 @@ public class Drone {
     public MoveResult goTo(Position position){
         return moving;
     }
+
+    public Position getPosition(){
+        return this.position;
+    }
 }

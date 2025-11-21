@@ -1,6 +1,5 @@
 package drones.gr1;
 
-import javax.swing.text.Position;
 import java.util.List;
 
 public class Path {
@@ -13,7 +12,7 @@ public class Path {
         this.positions = positions;
     }
 
-    Position nexPosition(Position pos){
+    Position nextPosition(Position pos){
         for(int i = 0;i< this.positions.size();i++){
             if(this.positions.get(i).equals(pos)){
                 if(this.positions.get(i+1).equals(this.positions.getLast())){
