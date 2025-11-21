@@ -31,4 +31,12 @@ public class Drone {
     public Position getPosition(){
         return this.position;
     }
+
+    public MoveResult getMoving() {
+        return moving;
+    }
+
+    public MoveResult getReject() {
+        return reject;
+    }
 }

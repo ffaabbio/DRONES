@@ -1,18 +1,26 @@
 package drones.gr1;
+<<<<<<< HEAD
 
 import drones.gr1.AddResponse.AddResponse;
 import drones.gr1.AddResponse.Added;
 
 
+=======
+/*
+>>>>>>> 9146aaf (Mise en place de test)
 public class Fleet {
     private AllDrones allDrones;
     private AllMissions allMissions;
 
+<<<<<<< HEAD
     public AddResponse AddDrone(Drone drone)
     {
         this.allDrones.add(drone);
         return new Added();
     }
+=======
+    //allDrones et allMissions
+>>>>>>> 9146aaf (Mise en place de test)
 
     public Boolean RemoveDrone()
     {
@@ -47,3 +55,5 @@ public class Fleet {
 
 
 }
+
+ */
